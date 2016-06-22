@@ -47,9 +47,7 @@ a{
  text-decoration: none;
  font-weight: bold;
 }
-a:hover {
- color: #ffffff;
-}
+
 header {
  background: #405580;
  width: 100%;
@@ -69,13 +67,14 @@ header {
 }
 nav {
  float: right;
- padding: 35px 20px 20px 0;
+ margin: 30px auto; 
 }
 #menu-icon {
  display: none;
- width: 40px;
- height: 40px;
+ width: 60px;
+ height: 30px;
  background: url(http://www.w3newbie.com/wp-content/uploads/icon.png) right;
+
 }
 a:hover #menu-icon {
  border-radius: 4px 4px 0 0;
@@ -86,13 +85,8 @@ ul {
 nav ul li {
  display: inline-block;
  float: left;
- padding: 10px;
-}
-.current {
- color: #505050;
-  background-color: #000000;
- opacity: 0.50;
-
+ padding: 20px;
+  font-size: 20px;
 }
 #doc {
  margin: 40px 0;
@@ -158,18 +152,20 @@ footer.second {
 
 @media screen and (max-width: 478px) {
  #menu-icon {
-  display: inline-block;
+  	display: block;
  }
- nav ul {
+   nav ul {
   display: none;
   position: absolute;
   padding: 20px;
+
   background: #405580;
   border: 1px solid #ffffff;
   right: 20px;
   top: 60px;
   width: 50%;
   border-radius: 2px 0 2px 2px;
+
  }
  nav li {
   text-align: center;
@@ -179,6 +175,9 @@ footer.second {
  }
  nav:hover ul {
   display: block;
+ }
+ nav ul li a:hover {
+color: #000;
  }
  section {
   float: left;
@@ -215,7 +214,7 @@ footer.second {
    <nav>
     <a href="#" id="menu-icon"></a>
 	<ul>
-	 <li><a href="#" class="current">Home</a></li>
+	 <li><a href="#">Home</a></li>
 	 <li><a href="#">Trainers</a></li>
 	 <li><a href="#">Plans</a></li>
 	 <li><a href="#">Pricing</a></li>
